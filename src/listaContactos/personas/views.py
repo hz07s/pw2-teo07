@@ -6,7 +6,7 @@ from .models import Persona
 def personaTextView(request):
     obj = Persona.objects.get(id = 1)
     context = {
-        'nombre' : obj.nomres,
+        'nombre' : obj.nombres,
         'edad' : obj.edad,
     }
-    return render(request, 'personas/test.html', context)
+    return render(request, 'test.html', context)
