@@ -25,5 +25,5 @@ urlpatterns = [
     path('another/', anotherView),
     path('admin/', admin.site.urls),
     path('persona/', personaTextView, name='otro'),
-    path('agregar', personaCreateView, name='createPersona'),
+    path('agregar/', personaCreateView, name='createPersona'),
 ]
